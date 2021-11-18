@@ -22,7 +22,12 @@ path2 = "Hindi.csv"
 df2 = pd.read_csv(path2,header = None)
 b = df2[0].values
 words.extend(b)
-
+k = []
+for x in words:
+    k.append(x.strip())
+    
+ words = k
+    
 @app.route('/word',methods = ['POST'])
 def word() :
 
