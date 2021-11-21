@@ -26,7 +26,7 @@ k = []
 for x in words:
     k.append(x.strip())
     
- words = k
+words = k
     
 @app.route('/word',methods = ['POST'])
 def word() :
