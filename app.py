@@ -46,7 +46,7 @@ def word() :
 
         for x in words :
 
-            if ( x == y ) or (y.lower() == x) :
+            if ( x == y ) or (y.lower() == x) or (x.lower() == y) or (x.lower() == y.lower()):
 
                 word = "BAD_WORD"
 
